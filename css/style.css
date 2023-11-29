@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #E6EAE1;
+    padding-top: 1rem;
+    position: fixed;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 1;
+    animation: mover 1s reverse;
+}
+
+#header-logo {
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+header p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+    min-height: 100vh;
+    width: 100%;
+    animation: mover;
+    animation-duration: 1s;
+    animation-direction: reverse;
+}
+
+@keyframes mover {
+    to {
+        transform: translateY(-1000px);
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.social a {
+    margin: 0.5rem 2rem;
+    padding: 0.5rem;
+    transition: 0.5s;
+}
+
+.social a:hover {
+    width: 50px;
+    border-radius: 10px;
+    background-color: #FFD700;
+    transform: scale(0.8);
+}
+
+.home-text {
+    height: 200px;
+}
+
+.home-text p,
+span {
+    font-size: 20px;
+}
+
+.home-img img {
+    width: 400px;
+    height: 400px;
+    transition: 0.5s;
+}
+
+.home-img img:hover {
+    transform: scale(1.1);
+}
+
+.about {
+    margin-bottom: 2rem;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 28px;
+    color: #FFD700;
+    text-shadow: 2px 2px black;
+}
+
+.dev {
+    text-align: center;
+    font-size: 20px;
+}
+
+.about-img img {
+    width: 500px;
+    height: 350px;
+    transition: 0.5s;
+}
+
+.about-img img:hover {
+    transform: scale(1.1);
+}
+
+.about-information {
+    display: flex;
+    justify-content: center;
+}
+
+.about-information p {
+    margin-top: 2rem;
+    font-size: 18px;
+}
+
+.contact {
+    padding-top: 1rem;
+}
+
+.contact img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact img:hover {
+    background-color: #FFD700;
+    transform: scale(1.3);
+}
+
+.skills {
+    margin-bottom: 2rem;
+}
+
+.skills-image {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-image img {
+    width: 225px;
+    height: 250px;
+    padding: 2rem 1rem;
+    margin: 1rem;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.skills-image img:hover {
+    transform: translateY(-40px);
+}
+
+.study-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-img {
+    width: 250px;
+    height: 150px;
+    background-color: #FFFAF0;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.area-img:hover {
+    transform: scale(1.1);
+}
+
+.area-img img {
+    width: 80px;
+    height: 80px;
+}
+
+.footer-container {
+    width: 100%;
+    height: 100px;
+    background: rgb(250, 255, 5);
+    background: linear-gradient(90deg, rgba(250, 255, 5, 1) 0%, rgba(255, 76, 0, 1) 50%, rgba(255, 165, 5, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.footer-container p {
+    font-size: 25px;
+}
+
+@media(max-width:900px) {
+
+    .home-text p,
+    span {
+        font-size: 16px;
+    }
+
+    .home-img img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .social img {
+        width: 25px;
+    }
+
+    .about-img img {
+        width: 400px;
+        height: 300px;
+    }
+
+    .about-information p {
+        font-size: 16px;
+    }
+
+    .contact img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .skills {
+        margin-bottom: 5rem;
+    }
+
+    .skills-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .study {
+        margin-bottom: 5rem;
+    }
+
+    .area-img {
+        width: 200px;
+        height: 120px;
+    }
+
+    .area-img img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .area-img p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:800px) {
+
+    .home-text h1,
+    h2 {
+        font-size: 18px;
+    }
+
+    .home-text p,
+    span {
+        font-size: 16px;
+    }
+
+    .social {
+        margin-bottom: 2rem;
+    }
+
+    .social a {
+        margin-top: 0;
+    }
+
+    .social img {
+        width: 23px;
+    }
+
+    .subtitle {
+        font-size: 23px;
+        padding-top: 1rem;
+    }
+
+    .dev {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .contact img {
+        width: 35px;
+        height: 35px;
+        margin-left: 3rem;
+
+    }
+
+    .skills {
+        margin-bottom: 1.5rem;
+    }
+
+    .skills-image img {
+        width: 150px;
+        height: 180px;
+    }
+
+    .study {
+        margin-bottom: 1.5rem;
+    }
+
+    .area-img {
+        width: 180px;
+        height: 110px;
+        margin: 0.5rem;
+    }
+
+    .area-img p {
+        font-size: 13px;
+    }
+
+    .footer-container {
+        width: 100%;
+        height: 90px;
+    }
+
+    .footer-container p {
+        font-size: 23px;
+    }
+
+}
+
+@media(max-width:600px) {
+    header {
+        height: 130px;
+    }
+
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .home-text {
+        height: 250px;
+        width: 250px;
+    }
+
+    .home-text h1,
+    h2 {
+        font-size: 14px;
+    }
+
+    .home-text p,
+    span {
+        font-size: 14px;
+    }
+
+    .social img {
+        width: 19px;
+        height: 19px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .subtitle {
+        font-size: 21px;
+        padding-top: 2rem;
+    }
+
+    .dev {
+        font-size: 16px;
+    }
+
+    .contact {
+        display: flex;
+    }
+
+    .contact img {
+        width: 32px;
+        height: 32px;
+        margin-left: 1.5rem;
+    }
+
+    .skills-image img {
+        width: 130px;
+        height: 150px;
+    }
+
+    .footer-container {
+        width: 100%;
+        height: 80;
+    }
+
+    .footer-container p {
+        font-size: 22px;
+    }
+}
